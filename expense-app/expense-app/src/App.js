@@ -31,10 +31,7 @@ function App() {
   return (
     <div className="container">
       <NewExpense onAddExpenseHandler={addExpenseHandler} />
-      <Expenses expenses={expenses[0]} />
-      <Expenses expenses={expenses[1]} />
-      <Expenses expenses={expenses[2]} />
-      <Expenses expenses={expenses[3]} />
+      <Expenses expenses={expenses} />
     </div>
   );
 }
