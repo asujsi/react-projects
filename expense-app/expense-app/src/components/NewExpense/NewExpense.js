@@ -4,8 +4,8 @@ import ExpenseForm from "./ExpenseForm";
 function NewExpense({ onAddExpenseHandler }) {
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
-      ...enteredExpenseData,
       id: Math.random().toString(),
+      ...enteredExpenseData,
     };
     onAddExpenseHandler(expenseData);
   };
